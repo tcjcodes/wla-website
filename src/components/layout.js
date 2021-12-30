@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import BaseAnchor from "./BaseAnchor"
 
 import Header from "./header"
 import "./layout.css"
@@ -30,18 +31,21 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          padding: `0 1.0875rem 1.45rem 1.0875rem`,
+          textAlign: "center",
         }}
       >
         <main>{children}</main>
         <footer
           style={{
-            marginTop: `2rem`,
+            marginTop: `5rem`,
+            color: "grey",
+            fontSize: "85%",
           }}
         >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <BaseAnchor href="https://www.gatsbyjs.com">Gatsby</BaseAnchor>
         </footer>
       </div>
     </>

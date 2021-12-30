@@ -1,32 +1,40 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import styled from "styled-components"
+import BaseAnchor from "./BaseAnchor"
 
+const StyledTitle = styled.h1`
+  font-family: "La Belle Aurore", "Bradley Hand", "Brush Script MT", cursive;
+  font-weight: 400;
+  font-size: 350%;
+  margin: 0;
+`
+
+const StyledAnchor = styled(BaseAnchor)`
+  &&& {
+    color: #4d4d4d;
+  }
+
+  font-weight: normal;
+`
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        paddingTop: `3rem`,
+        textAlign: "center",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+      <StyledTitle>
+        <StyledAnchor
+          href="https://www.instagram.com/withloveava_/"
+          title="@withlovava_ Instagram"
         >
           {siteTitle}
-        </Link>
-      </h1>
+        </StyledAnchor>
+      </StyledTitle>
     </div>
   </header>
 )

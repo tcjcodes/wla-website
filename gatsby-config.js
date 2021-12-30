@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `with love, Ava`,
+    description: `Seattle-based | lover of food & sweetness ★`,
+    author: `@tcjcodes`,
+    siteUrl: `https://www.withloveava.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,5 +34,25 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+
+    // Google fonts
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          // https://fonts.google.com/specimen/La+Belle+Aurore?category=Handwriting&preview.text=with%20love,%20Ava&preview.text_type=custom#standard-styles
+          `La Belle Aurore`,
+          `cursive\:400`,
+          // `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        disableVendorPrefixes: true,
+      },
+    },
   ],
 }
