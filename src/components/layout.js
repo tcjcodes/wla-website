@@ -5,9 +5,9 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from "react"
 import BaseAnchor from "./BaseAnchor"
 
 import Header from "./header"
@@ -45,7 +45,9 @@ const Layout = ({ children }) => {
         >
           © {new Date().getFullYear()}, Built with
           {` `}
-          <BaseAnchor href="https://www.gatsbyjs.com">Gatsby</BaseAnchor>
+          <BaseAnchor target="_blank" href="https://www.gatsbyjs.com">
+            Gatsby
+          </BaseAnchor>
         </footer>
       </div>
     </>

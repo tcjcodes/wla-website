@@ -1,5 +1,5 @@
-import * as React from "react"
 import PropTypes from "prop-types"
+import * as React from "react"
 import styled from "styled-components"
 import BaseAnchor from "./BaseAnchor"
 
@@ -31,6 +31,7 @@ const Header = ({ siteTitle }) => (
         <StyledAnchor
           href="https://www.instagram.com/withloveava_/"
           title="@withlovava_ Instagram"
+          target="_blank"
         >
           {siteTitle}
         </StyledAnchor>
