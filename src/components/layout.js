@@ -48,6 +48,17 @@ const Layout = ({ children }) => {
           <BaseAnchor target="_blank" href="https://www.gatsbyjs.com">
             Gatsby
           </BaseAnchor>
+          .{" "}
+          <BaseAnchor
+            target="_blank"
+            href="https://icons8.com/icon/40146/cookie"
+          >
+            Cookie
+          </BaseAnchor>{" "}
+          icon by{" "}
+          <BaseAnchor target="_blank" href="https://icons8.com">
+            Icons8
+          </BaseAnchor>
         </footer>
       </div>
     </>

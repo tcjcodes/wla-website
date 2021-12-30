@@ -5,7 +5,6 @@ import BaseAnchor from "./BaseAnchor"
 
 const StyledTitle = styled.h1`
   font-family: "La Belle Aurore", "Bradley Hand", "Brush Script MT", cursive;
-  font-weight: 400;
   font-size: 350%;
   margin: 0;
 `
@@ -14,7 +13,7 @@ const StyledAnchor = styled(BaseAnchor)`
   &&& {
     color: #4d4d4d;
   }
-
+  font-style: normal;
   font-weight: normal;
 `
 const Header = ({ siteTitle }) => (
