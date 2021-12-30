@@ -2,12 +2,20 @@
 
 Created from [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default).
 
+The `main` branch deploys to Netlify and is served to [http://withloveava.com](http://withloveava.com/)
+
 ## 🚀 Quick start
 
 ```shell
 nvm use lts/fermium
 npm ci
 npm run develop
+```
+
+Prod build:
+
+```shell
+npm run build
 ```
 
 Your site is now running at `http://localhost:8000`!

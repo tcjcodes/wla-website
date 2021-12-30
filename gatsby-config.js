@@ -20,15 +20,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `with love, Ava website`,
+        short_name: `with love, Ava`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icons8-cookie-32.png`, // This path is relative to the root of the site.
+        icon: `src/images/icons8-cookie-96.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

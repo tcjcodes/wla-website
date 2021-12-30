@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <p style={{ margin: "0.33rem 1rem 3.3rem 1rem" }}>
-      seattle-based baked goods | lover of food &&nbsp;sweetness&nbsp;☆
+      seattle-based bakery | lover of food &&nbsp;sweetness&nbsp;☆
     </p>
 
     <BaseAnchor
